@@ -1,0 +1,11 @@
+<template>
+  <div>
+    <p>detail</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'ProductDetail'
+}
+</script>
