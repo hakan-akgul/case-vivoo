@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="products-list" class="flex flex-wrap items-center justify-center">
     <CardProduct
       v-for="product in products"
       :key="product.id"
