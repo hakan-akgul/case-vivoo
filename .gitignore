@@ -89,3 +89,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# SHOP_SK
+configs/secret.js

@@ -1,6 +1,6 @@
 export default {
   head: {
-    title: 'pishop',
+    title: 'vivoo shop',
     htmlAttrs: {
       lang: 'en'
     },
