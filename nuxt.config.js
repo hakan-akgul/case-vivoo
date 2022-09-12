@@ -1,3 +1,5 @@
+import secret from "./configs/secret"
+
 export default {
   head: {
     title: 'vivoo shop',
@@ -41,7 +43,11 @@ export default {
   },
 
   proxy: {
-    '/api': { target: 'https://ookprgdhd9.execute-api.us-west-2.amazonaws.com/hakanakgul3f4ab84f', pathRewrite: { '^/api': '' } }
+    '/api': {
+      target: 'https://ookprgdhd9.execute-api.us-west-2.amazonaws.com/hakanakgul3f4ab84f',
+      pathRewrite: { '^/api': '' },
+      headers: { SHOP_SK: secret.SHOP_SK }
+    }
   },
 
   axios: {
