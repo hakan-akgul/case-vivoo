@@ -1,11 +1,23 @@
 <template>
   <div>
-    <p>cart item</p>
+    <p>{{ cart[itemId] }}</p>
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
-  name: 'CartItem'
-}
+  name: "CardCart",
+
+  props: {
+    itemId: {
+      type: Number,
+    },
+  },
+
+  computed: {
+    ...mapState(["cart"]),
+  },
+};
 </script>

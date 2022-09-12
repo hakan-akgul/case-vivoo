@@ -3,22 +3,16 @@ import { fetchItems } from "../utils"
 export const state = () => ({
   products: [],
   categories: [],
-  cart: [],
+  cart: {},
   selectedProduct: {}
 })
-
-export const getters = {
-}
 
 export const mutations = {
   updateProducts: (state, payload) => state.products = payload,
   updateCategories: (state, payload) => state.categories = payload,
   updateSelectedProduct: (state, payload) => state.selectedProduct = payload,
-  updateCart: (state, payload) => {
-    if (state.cart.includes(payload)) {
-      return
-    }
-    state.cart.push(payload)
+  updateCart: (state, item) => {
+    state.cart[item.id] = { title: item.title, price: item.price, image: item.image }
   }
 }
 

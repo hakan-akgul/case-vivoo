@@ -99,7 +99,7 @@ export default {
 
   methods: {
     addToCart(id) {
-      this.$store.commit("updateCart", this.selectedProduct.id);
+      this.$store.commit("updateCart", this.selectedProduct);
     },
   },
 };
