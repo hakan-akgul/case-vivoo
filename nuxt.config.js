@@ -21,6 +21,7 @@ export default {
   },
 
   css: [
+    '@/styles/main.css',
   ],
 
   plugins: [

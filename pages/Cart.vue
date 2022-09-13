@@ -25,7 +25,7 @@
       @updateTotalPrice="updateTotalPrice()"
     />
 
-    <div>
+    <div class="mb-12">
       <p class="font-medium">Enter Promo Code</p>
       <div class="w-full p-4 my-4 bg-cultured rounded-xl">
         <input
@@ -41,7 +41,7 @@
       </button>
     </div>
 
-    <div class="absolute w-full pr-8 bottom-4">
+    <div class="">
       <div class="flex items-center justify-between">
         <p class="text-arsenic">Total</p>
         <p class="text-lg font-semibold justify-self-end text-yankees-blue">

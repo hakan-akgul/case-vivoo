@@ -56,7 +56,9 @@
         <nuxt-link class="text-sm text-arsenic" to="/">See all</nuxt-link>
       </div>
 
-      <div class="flex w-full h-56 overflow-x-auto whitespace-nowrap">
+      <div
+        class="flex w-full h-56 overflow-x-auto  whitespace-nowrap scrollbar-hide"
+      >
         <CardProduct
           class="mr-4"
           :product="product"
