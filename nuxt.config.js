@@ -1,6 +1,12 @@
 import secret from "./configs/secret"
 
 export default {
+  buildDir: 'prod/build',
+
+  generate: {
+    dir: 'prod/generate'
+  },
+
   head: {
     title: 'vivoo shop',
     htmlAttrs: {
@@ -24,24 +30,16 @@ export default {
     '@/styles/main.css',
   ],
 
-  plugins: [
-  ],
-
   components: true,
 
   buildModules: [
     '@nuxtjs/tailwindcss',
   ],
-  env: {
-  },
 
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/proxy'
   ],
-
-  build: {
-  },
 
   proxy: {
     '/api': {
