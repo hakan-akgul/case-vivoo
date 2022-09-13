@@ -5,12 +5,12 @@
       class="absolute flex justify-between w-full px-8 top-12"
     >
       <nuxt-link to="/">
-        <div class="w-10 h-10 pt-3 pl-3.5 bg-white rounded-full">
+        <div class=" w-10 h-10 pt-3 pl-3.5 bg-white rounded-full hover:bg-indigo-100 transition-colors duration-500 cursor-pointer " >
           <img src="assets/back.svg" alt="back" />
         </div>
       </nuxt-link>
       <nuxt-link to="Cart">
-        <div class="w-10 h-10 pt-2.25 pl-2.25 bg-white rounded-full">
+        <div class=" w-10 h-10 pt-2.25 pl-2.25 bg-white rounded-full hover:bg-indigo-100 transition-colors duration-500 cursor-pointer " >
           <img src="assets/cart.svg" alt="cart" />
         </div>
       </nuxt-link>
@@ -23,18 +23,24 @@
     />
 
     <div id="detail-colors" class="flex justify-center h-6 my-5">
-      <div class="w-6 h-6 p-1.5 mx-2 rounded-full bg-detail-1">
+      <div class=" w-6 h-6 p-1.5 mx-2 rounded-full bg-detail-1 hover:opacity-50 transition-colors duration-500 " >
         <img src="assets/check.svg" alt="check" />
       </div>
-      <div class="w-6 h-6 mx-2 rounded-full bg-detail-2" />
-      <div class="w-6 h-6 mx-2 rounded-full bg-detail-3" />
-      <div class="w-6 h-6 mx-2 rounded-full bg-detail-4" />
+      <div
+        class="w-6 h-6 mx-2 transition-colors duration-500 rounded-full  bg-detail-2 hover:opacity-50"
+      />
+      <div
+        class="w-6 h-6 mx-2 transition-colors duration-500 rounded-full  bg-detail-3 hover:opacity-50"
+      />
+      <div
+        class="w-6 h-6 mx-2 transition-colors duration-500 rounded-full  bg-detail-4 hover:opacity-50"
+      />
     </div>
 
     <div class="p-8 bg-white rounded-tl-3xl rounded-tr-3xl font-poppins">
       <div class="">
         <button
-          class="float-right h-10 p-2 ml-4 border-2 rounded-lg  w-28 border-yankees-blue"
+          class="float-right h-10 p-2 ml-4 transition-colors duration-500 border-2 rounded-lg  w-28 border-yankees-blue hover:bg-yankees-blue hover:text-white"
         >
           Try virtual
         </button>
@@ -69,13 +75,13 @@
 
       <div id="go-to-cart" class="flex mt-4">
         <button
-          class="p-4 rounded-lg bg-yankees-blue w-13 h-13"
+          class="p-4 transition-colors duration-500 rounded-lg  bg-yankees-blue w-13 h-13 hover:opacity-50"
           @click="addToCart()"
         >
           <img src="assets/plus.svg" alt="plus" />
         </button>
         <button
-          class="w-full ml-6 text-white rounded-lg bg-mango-tango h-13"
+          class="w-full ml-6 text-white transition-colors duration-500 rounded-lg  bg-mango-tango h-13 hover:opacity-50"
           @click="buyNow()"
         >
           Buy Now

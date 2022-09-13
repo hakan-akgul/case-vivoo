@@ -5,13 +5,15 @@
         <div class="flex flex-1 px-4 py-2 bg-cultured rounded-2xl">
           <img src="assets/search.svg" alt="search" />
           <input
-            class="h-6 ml-4 appearance-none  focus-visible:outline-none bg-cultured"
+            class="w-full h-6 ml-4 appearance-none  focus-visible:outline-none bg-cultured cursor-text"
             type="text"
             placeholder="Search"
           />
         </div>
 
-        <div class="w-10 h-10 p-3 ml-4 mr-5 rounded-full bg-cultured">
+        <div
+          class="w-10 h-10 p-3 ml-4 mr-5 transition-colors duration-500 rounded-full cursor-pointer  bg-cultured hover:bg-indigo-100"
+        >
           <img src="assets/setting.svg" alt="setting" />
         </div>
       </div>
@@ -22,14 +24,14 @@
           class="my-4 overflow-x-scroll whitespace-nowrap scrollbar-hide"
         >
           <button
-            class="px-4 py-2 mr-2 border-2 rounded-lg border-yankees-blue"
+            class="px-4 py-2 mr-2 transition-colors duration-500 border-2 rounded-lg  border-yankees-blue hover:bg-yankees-blue hover:text-white"
             :class="{ 'bg-yankees-blue text-white': activeCategory === '' }"
             @click="filterProducts('')"
           >
             All
           </button>
           <button
-            class="px-4 py-2 mx-2 capitalize border-2 rounded-lg  border-yankees-blue"
+            class="px-4 py-2 mx-2 capitalize transition-colors duration-500 border-2 rounded-lg  border-yankees-blue hover:bg-yankees-blue hover:text-white"
             :class="{
               'bg-yankees-blue text-white': activeCategory === category,
             }"

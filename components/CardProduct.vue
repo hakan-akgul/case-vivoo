@@ -1,7 +1,7 @@
 <template>
-  <div class="relative">
+  <div class="relative cursor-pointer">
     <div
-      class="absolute w-8 h-8 pt-2 pl-1.75 bg-white rounded-full right-4 top-4"
+      class="absolute w-8 h-8 pt-2 pl-1.75 bg-white rounded-full right-4 top-4 hover:bg-indigo-100 transition-color duration-500 "
       @click="favorite = !favorite"
     >
       <img v-if="favorite" src="assets/heart-fill.svg" alt="heart-fill" />
@@ -10,7 +10,7 @@
 
     <div
       @click="goToDetail()"
-      class="flex flex-col items-center p-4 overflow-hidden font-semibold  w-44 h-52 rounded-2xl bg-cultured hover:bg-indigo-100 font-poppins"
+      class="flex flex-col items-center p-4 overflow-hidden font-semibold transition-colors duration-500  w-44 h-52 rounded-2xl bg-cultured hover:bg-indigo-100 font-poppins"
     >
       <div
         class="w-full h-20 mt-8 mb-4 bg-center bg-no-repeat bg-contain"
