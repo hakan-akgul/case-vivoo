@@ -12,7 +12,10 @@ export const mutations = {
   updateCategories: (state, payload) => state.categories = payload,
   updateSelectedProduct: (state, payload) => state.selectedProduct = payload,
   updateCart: (state, item) => {
-    state.cart[item.id] = { title: item.title, price: item.price, image: item.image }
+    state.cart[item.id] = { title: item.title, price: item.price, image: item.image, piece: 1 }
+  },
+  updatePiece: (state, payload) => {
+    state.cart[payload.id].piece = payload.piece
   }
 }
 

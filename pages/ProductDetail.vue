@@ -72,7 +72,10 @@
         >
           <img src="assets/plus.svg" alt="plus" />
         </button>
-        <button class="w-full ml-6 text-white rounded-lg bg-mango-tango h-13">
+        <button
+          class="w-full ml-6 text-white rounded-lg bg-mango-tango h-13"
+          @click="buyNow()"
+        >
           Buy Now
         </button>
       </div>
@@ -100,6 +103,10 @@ export default {
   methods: {
     addToCart(id) {
       this.$store.commit("updateCart", this.selectedProduct);
+    },
+    buyNow() {
+      this.$store.commit("updateCart", this.selectedProduct);
+      this.$router.push("Cart");
     },
   },
 };
